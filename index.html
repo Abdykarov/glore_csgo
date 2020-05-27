@@ -48,7 +48,10 @@
 			<div class="header_block">
 				<p>Návrat krále <br>
 				je tady!</p>
-				<a href="#" class="read_btn">číst více</a>
+				<div class="header_link">
+					<a href="#" class="read_btn">číst více</a>
+
+				</div>
 			</div>
 			<div class="matches_block">
 				<div class="matches_nav">
@@ -170,19 +173,24 @@
 				offset: '-=800',
 			})
 			.add({
-				targets: '.header_block p',
-				opacity: [0,1],
-				translateY: [-100,0],
-				offset: '-=900',
-			})
-			.add({
-				targets: '.header_block a',
+				targets: '.header_link',
 			    opacity: [0,1],
 				translateX: [-200,0],
 				delay: (el,i) => 100 * i,
 				offset: '-=900',
 			})
 			
+			.add({
+				targets: '.header_block p',
+				opacity: [0,1],
+				translateX: [-100,0],
+				delay: (el,i) => 100 * i,
+				offset: '-=900',
+			})
+
+			.add({
+
+			})
 			
 		});
 	
