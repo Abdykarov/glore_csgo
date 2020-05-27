@@ -61,6 +61,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 	padding-left: 5%;
 	padding-right: 5%;
 }
+
 header{
 	width: 100%;
 	height: auto;
@@ -237,6 +238,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	color: #fcc419;
 	font-weight: bold;
 	font-size: 18px;
+	transition: all .3s ease;
 	padding: 10px 30px;
 	padding-right: 100px;
 	position: relative;
@@ -321,6 +323,9 @@ header nav ul li a:hover, header nav ul li a.active{
 	justify-content: space-between;
 	text-align: center;
 	align-items: center;
+	overflow: hidden;
+
+	z-index: 100;
 	opacity: 0.6;
 	padding: 0px 30px;
 	transition: all.4s;
@@ -361,12 +366,24 @@ header nav ul li a:hover, header nav ul li a.active{
 	margin-bottom: -15px;
 }
 .match_item:hover:after{
-	width: 40%;
+	width: 90%;
 	height: 100%;
-	display: inline-block;
-	left: 0;
+	content: '';
+	position: absolute;
+	display: block;
+	left: -60%;
 	top: 0;
-	background: linear-gradient()
+	background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(250, 194, 25, .5)); 
+}
+.match_item:hover:before{
+	width: 90%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	display: block;
+	right: -60%;
+	top: 0;
+	background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(250, 194, 25, .5)); 
 }
 .match_item:hover ul li{
 	color: #fac219;
