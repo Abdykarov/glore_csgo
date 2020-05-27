@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-Light.eot');
+    src: local('Industry Light'), local('Industry-Light'),
+        url('Industry-Light.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Light.woff') format('woff'),
+        url('Industry-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-Bold.eot');
+    src: local('Industry Bold'), local('Industry-Bold'),
+        url('Industry-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Bold.woff') format('woff'),
+        url('Industry-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-BoldItalic.eot');
+    src: local('Industry Bold Italic'), local('Industry-BoldItalic'),
+        url('Industry-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-BoldItalic.woff') format('woff'),
+        url('Industry-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-LightItalic.eot');
+    src: local('Industry Light Italic'), local('Industry-LightItalic'),
+        url('Industry-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-LightItalic.woff') format('woff'),
+        url('Industry-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry-Book';
+    src: url('Industry-Book.eot');
+    src: local('Industry Book'), local('Industry-Book'),
+        url('Industry-Book.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Book.woff') format('woff'),
+        url('Industry-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-BlackItalic.eot');
+    src: local('Industry Black Italic'), local('Industry-BlackItalic'),
+        url('Industry-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-BlackItalic.woff') format('woff'),
+        url('Industry-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry-BookItalic';
+    src: url('Industry-BookItalic.eot');
+    src: local('Industry Book Italic'), local('Industry-BookItalic'),
+        url('Industry-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-BookItalic.woff') format('woff'),
+        url('Industry-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry-DemiItalic';
+    src: url('Industry-DemiItalic.eot');
+    src: local('Industry Demi Italic'), local('Industry-DemiItalic'),
+        url('Industry-DemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-DemiItalic.woff') format('woff'),
+        url('Industry-DemiItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-Black.eot');
+    src: local('Industry Black'), local('Industry-Black'),
+        url('Industry-Black.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Black.woff') format('woff'),
+        url('Industry-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-Medium.eot');
+    src: local('Industry Medium'), local('Industry-Medium'),
+        url('Industry-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Medium.woff') format('woff'),
+        url('Industry-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('Industry-MediumItalic.eot');
+    src: local('Industry Medium Italic'), local('Industry-MediumItalic'),
+        url('Industry-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Industry-MediumItalic.woff') format('woff'),
+        url('Industry-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Industry-Demi';
+    src: url('Industry-Demi.eot');
+    src: local('Industry Demi'), local('Industry-Demi'),
+        url('Industry-Demi.eot?#iefix') format('embedded-opentype'),
+        url('Industry-Demi.woff') format('woff'),
+        url('Industry-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
