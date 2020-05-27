@@ -39,6 +39,7 @@ body,html{
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	min-width: 320px;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	color: #fff;
@@ -55,7 +56,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 .wrapper{
 	margin: 0 auto;
-	min-width: 370px;
+	min-width: 320px;
 	max-width: 100%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -63,10 +64,11 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 header{
 	width: 100%;
 	height: auto;
-	background: url(../img/header_bg.png) center 0 no-repeat;
+	background: url(../img/header_bg.png) center 0px no-repeat;
 	background-size: cover;
 	padding-top: 45px;
 	padding-bottom: 100px;
+
 }
 header nav{
 	display: flex;
@@ -77,6 +79,7 @@ header nav ul li{
 	list-style: none;
 	display: inline-block;
 }
+
 header nav ul li a{
 	display: inline-block;
 	font-family: "Industry", sans-serif;
@@ -87,11 +90,138 @@ header nav ul li a{
 	font-size: 18px;
 	margin: 0px 12px;
 }
+header nav ul li a i{
+	color: #ecb818;
+}
 header nav ul li a:hover, header nav ul li a.active{
 	border-bottom: 2px solid #ecb818;
 	padding-bottom: 5px;
 	color: #ecb818;
 }
+
+:root {
+  --animationSpeed: 0.25s;
+}
+.hamburger-menu {
+  display: none;
+  padding: 3px;
+  width: 29px;
+}
+
+.bars-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.bars-container,
+.bar {
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+}
+
+.overlap-container {
+  position: relative;
+  padding: 0 0 0 0;
+  top: -1.3px;
+}
+
+.overlap-container .bar {
+  position: absolute;
+  top: 0;
+}
+
+.bar1,
+.bar4 {
+  transform-origin: center left;
+  position: relative;
+}
+
+.open_all.mobile{
+	display: none;
+}
+
+.bars-container3 .bar1 {
+  animation: slideInLeft3Backward var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.bars-container3 .bar2 {
+  animation: crossBar2Three-backward var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.bars-container3 .bar3 {
+  animation: crossBar3Three-backward var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.bars-container3 .bar4 {
+  animation: slideInRight3Backward var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.input-check3:checked + label .bar1 {
+  animation: slideOutLeft3 var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.input-check3:checked + label .bar2 {
+  animation: crossBar2Three var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.input-check3:checked + label .bar3 {
+  animation: crossBar3Three var(--animationSpeed) ease 0s 1 forwards;
+}
+
+.input-check3:checked + label .bar4 {
+  animation: slideOutRight3 var(--animationSpeed) ease 0s 1 forwards;
+}
+
+@keyframes slideOutLeft3 {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideOutRight3 {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes slideInLeft3Backward {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight3Backward {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes crossBar2Three {
+  from { transform: rotate(0def); }
+  to { transform: rotate(40deg); }
+}
+
+@keyframes crossBar2Three-backward {
+  from { transform: rotate(40deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes crossBar3Three {
+  from { transform: rotate(0def); }
+  to { transform: rotate(-40deg); }
+}
+
+@keyframes crossBar3Three-backward {
+  from { transform: rotate(-40deg); }
+  to { transform: rotate(0deg); }
+}
+
+
 .header_block p{
 	font-family: "Industry", sans-serif;
 	font-weight: bold;
@@ -329,6 +459,12 @@ header nav ul li a:hover, header nav ul li a.active{
 }
 
 @media screen and (max-width: 1000px){
+	header nav ul{
+		display: none;
+	}
+	header .hamburger-menu{
+		display: inline-block;
+	}
 	header nav ul li a{
 		font-size: 16px;
 		font-weight: 300;
@@ -370,3 +506,88 @@ header nav ul li a:hover, header nav ul li a.active{
 		transition: all .3s;
 	}
 }
+
+
+@media screen and (max-width: 800px){
+	
+	header nav ul li a{
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.header_block p{
+		font-size: 45px;
+		margin-top: 100px;
+		margin-bottom: 80px;
+	}
+	.header_block .read_btn{
+		font-size: 15px;
+		padding: 8px 25px;
+		padding-right: 70px;
+		margin-bottom: 150px;
+	}
+	body{
+		font-size: 15px;
+	}
+	.matches_row{
+		justify-content: center;
+
+	}
+	.matches_row .match_item{
+		width: 70%;
+		margin-bottom: 2%;
+		justify-content: space-around;
+	}
+	.match_item p{
+		font-size: 13px;
+	}
+	.match_item img{
+		margin-top: 30px;
+		height: 70px;
+	}
+	.match_item ul li{
+		font-size: 35px;
+	}
+	.match_item ul li span{
+		width: 25px;
+		height: 4px;
+		display: inline-block;
+		background: #fac219;
+		margin-bottom: 10px;
+		transition: all .3s;
+	}
+
+	.open_all{
+		display: none;
+	}
+	.open_all.mobile{
+		float: right;
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 600px){
+	.matches_nav ul li{
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.header_block p{
+		margin-bottom: 50px;
+		margin-top: 80px;
+	}
+	.header_block .read_btn{
+		margin-bottom: 50px;
+	}
+	.matches_row .match_item{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.wrapper{
+		padding: 15px;
+	}
+	.matches_row .match_item{
+		width: 100%;
+	}
+}
+
