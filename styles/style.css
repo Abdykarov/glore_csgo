@@ -477,10 +477,12 @@ header nav ul li a:hover, header nav ul li a.active{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
 .roster_card{
 	width: 30%;
 	display: inline-block;
 	margin: 1%;
+	background: rgba(0,0,0,.7);
 }
 .roster_card .roster_img{
 	overflow: hidden;
@@ -488,28 +490,45 @@ header nav ul li a:hover, header nav ul li a.active{
 .roster_card .roster_img img{
 	width: 100%;
 	height: auto;
+	transition: all .2s ease;
+	filter: grayscale(90%);
+
 }
 .roster_card .roster_info{
-	background: #fac219;
+	background: #fff;
 	display: flex;
 	padding: 10px 20px;
 	align-items: center;
+	transition: all .2s;
 	justify-content: space-between;
 }
 .roster_info h2{
 	font-weight: bold;
+	transition: all .2s;
 	font-size: 20px;
-	color: #010101;
+	color: #000;
 	text-transform: uppercase;
 }
 .roster_info span{
 	margin: 0;
+	transition: all .2s;
 	padding: 0;
-	color: #fff;
+	color: #fac219;
 	font-size: 15px;
 	font-weight: 400;
 }
-
+.roster_card:hover img{
+	filter: grayscale(0%);
+}
+.roster_card:hover .roster_info{
+	background: #fac219;
+}
+.roster_card:hover .roster_info h2{
+	color: #000;
+}
+.roster_card:hover .roster_info span{
+	color: #fff;
+}
 .merch{
 	width: 100%;
 	text-align: right;
@@ -540,6 +559,47 @@ header nav ul li a:hover, header nav ul li a.active{
 }
 .merch a{
 	margin-top: 70px;
+}
+
+
+.articles_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 25px;
+}
+.articles_row div{
+	width: 30%;
+	margin: 1%;
+	display: inline-block;
+	position: relative;
+	max-height: 330px;
+}
+.articles_row div img{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(90%);
+}
+.articles_row div .article_info{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	content: '';
+	background: rgba(0,0,0,.7);
+	margin: 0;
+	padding: 7px 15px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+.article_info p{
+	width: 100%;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
 }
 @media screen and (min-width: 1500px){
 	header nav ul li a{
