@@ -19,6 +19,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Industry";
+  src: url("../fonts/Industry-Black.ttf") format("truetype");
+  font-weight: black;
+  font-style: normal;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -222,7 +228,6 @@ header nav ul li a:hover, header nav ul li a.active{
   to { transform: rotate(0deg); }
 }
 
-
 .header_block p{
 	font-family: "Industry", sans-serif;
 	font-weight: bold;
@@ -246,7 +251,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 10px;
-	border: 1px solid #fcc419;
+	border: 2px solid #fcc419;
 }
 .read_btn:after{
 	position: absolute;
@@ -362,8 +367,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	opacity: 1;
 	background-position: center -30px;
 	cursor: pointer;
-	margin-top: -15px;
-	margin-bottom: -15px;
+	margin: -15px;
 }
 .match_item:hover:after{
 	width: 90%;
@@ -392,6 +396,151 @@ header nav ul li a:hover, header nav ul li a.active{
 	background: #fff;
 }
 
+.sponsores{
+	width: 100%;
+	margin: 50px 0px;
+}
+
+.sponsores_block .slick-slide{
+	margin: 0px 25px;
+	box-sizing: border-box;
+	outline: none;
+	cursor: pointer;
+}
+.sponsores_block div img{
+	width: 100%;
+}
+.sponsores_block button{
+	display: none !important;
+}
+
+.roster{
+	margin: 100px 0px;
+	margin-bottom: 50px;
+	background: url(../img/light-left.png) left top no-repeat;
+	width: 100%;
+}
+
+.roster_row{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+}
+.roster_row .roster_left{
+	width: 20%;
+
+}
+.roster_title{
+	transform: rotate(-90deg);
+	    justify-content: flex-end;
+	display: flex;
+}
+.roster_left .horizontal{
+	transform: rotate(90deg);
+	    align-self: center;
+
+}
+.roster_left .horizontal p{
+	color: #fcc419;
+	font-size: 85px;
+	font-family: 'Industry', sans-serif;
+	font-weight: bold;
+}
+.roster_left .vertical{
+	align-items: top;
+	margin-right: -25px;
+	margin-top: 25px;
+}
+.roster_left .vertical p{
+	color: #fff;
+	padding-bottom: 85px;
+	font-size: 85px;
+	line-height: 85px;
+	font-family: 'Industry', sans-serif;
+	font-weight: bold;
+}
+.roster_left .vertical p span{
+	color: #0b0b0b;
+	font-size: 85px;
+	text-shadow: 0px 0px 2px #fac419;
+	font-family: 'Industry', sans-serif;
+	font-weight: bold;
+}
+.roster_row .roster_right{
+	width: 75%;
+	margin-left: 5%;
+}
+.roster_row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.roster_card{
+	width: 30%;
+	display: inline-block;
+	margin: 1%;
+}
+.roster_card .roster_img{
+	overflow: hidden;
+}
+.roster_card .roster_img img{
+	width: 100%;
+	height: auto;
+}
+.roster_card .roster_info{
+	background: #fac219;
+	display: flex;
+	padding: 10px 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.roster_info h2{
+	font-weight: bold;
+	font-size: 20px;
+	color: #010101;
+	text-transform: uppercase;
+}
+.roster_info span{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.merch{
+	width: 100%;
+	text-align: right;
+	background: url(../img/merch_bg.png) center 0px no-repeat;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-size: cover;
+}
+.merch h3{
+	font-size: 160px;
+	color: #fcc419;
+	line-height: 140px;
+	font-family: 'Industry', sans-serif;
+	font-weight: black;
+	margin-bottom: 70px;
+}
+.merch h3 span{
+	font-size: 160px;
+	color: #0d0c0b;
+	text-shadow: 0px 0px 2px #fff;
+	font-family: 'Industry', sans-serif;
+	font-weight: black;
+}
+.merch p{
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+}
+.merch a{
+	margin-top: 70px;
+}
 @media screen and (min-width: 1500px){
 	header nav ul li a{
 		font-size: 21px;
