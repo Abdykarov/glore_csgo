@@ -42,6 +42,7 @@ $(document).ready(function function_name(argument) {
 	// body...
 	$('.sponsores_block').slick({
 	  slidesToShow: 5,
+	  
 	  slidesToScroll: 1,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
