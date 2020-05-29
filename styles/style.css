@@ -71,10 +71,12 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 header{
 	width: 100%;
 	height: auto;
-	background: url(../img/header_bg.png) center 0px no-repeat;
+	background-position: center 0;
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 45px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
+	margin-bottom: 70px;
 
 }
 header nav{
@@ -98,12 +100,27 @@ header nav ul li a{
 	margin: 0px 12px;
 }
 header nav ul li a i{
+
 	color: #ecb818;
 }
 header nav ul li a:hover, header nav ul li a.active{
 	border-bottom: 2px solid #ecb818;
 	padding-bottom: 5px;
 	color: #ecb818;
+}
+
+.header_title h1{
+	font-size: 25px;
+	font-weight: bold;
+	color: #fac419;
+	margin-top: 250px;
+	margin-bottom: 10px;
+}
+.header_title p{
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 40px;
 }
 
 :root {
@@ -546,10 +563,12 @@ header nav ul li a:hover, header nav ul li a.active{
 .merch{
 	width: 100%;
 	text-align: right;
-	background: url(../img/merch_bg.png) center 0px no-repeat;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	background: url(../img/merch_bg.png) center center no-repeat;
 	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	margin-bottom: 150px;
+
 }
 .merch h3{
 	font-size: 160px;
@@ -589,6 +608,8 @@ header nav ul li a:hover, header nav ul li a.active{
 	display: inline-block;
 	position: relative;
 	max-height: 330px;
+	transition: all .2s ease;
+	border-bottom: 2px solid transparent;
 }
 
 .articles_row div img{
@@ -658,8 +679,264 @@ header nav ul li a:hover, header nav ul li a.active{
 	visibility: visible;
 
 }
-.footer{
-	
+.articles_row > div:hover{
+	border-color: #fcc219;
+}
+.contact_block{
+	width: 100%;
+	background: url(../img/contact_bg.png) center 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 200px 0px 150px 0px;
+}
+.contact_row{
+	display: flex;
+	justify-content: space-between;
+}
+.contact_row > div{
+	width: 50%;
+	display: inline-block;
+}
+.contact_block h2{
+	font-size: 70px;
+	font-family: "Industrial", sans-serif;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	margin-bottom: 150px;
+}
+.contact_block h2:after{
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 4px;
+	background: #fcc419;
+	left: 15px;
+	bottom: -40px;
+	display: block;
+}
+.contact_left_row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.contact_left input{
+	padding: 15px 0px;
+	outline: none;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #44370e;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	transition: all .2s ease;
+}
+.contact_left textarea{
+	padding: 15px 0px;
+	outline: none;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #44370e;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	height: 200px;
+	margin-bottom: 25px;
+	transition: all .2s ease;
+}
+.contact_left input::placeholder,.contact_left textarea::placeholder{
+	color: #242424;
+	transition: all .2s ease;
+}
+.contact_left input:hover, .contact_left input:active,.contact_left textarea:hover, .contact_left textarea:active{
+	border-color: #fcc419;
+}
+.contact_left input:hover::placeholder, .contact_left input:active::placeholder,.contact_left textarea:hover::placeholder, .contact_left textarea:active::placeholder{
+	color: #fff;
+}
+.contact_left button{
+	padding: 10px 40px;
+	background: #fcc419;
+	color: #000;
+	font-weight: 400;
+	font-size: 18px;
+	float: right;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+}
+.contact_right{
+	text-align: right;
+
+}
+.contact_right h4{
+	font-size: 40px;
+	font-family: "Industrial", sans-serif;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	margin-bottom: 100px;
+}
+.contact_right h4:after{
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 4px;
+	background: #4a3c12;
+	right: 0;
+	bottom:-40px;
+	display: block;
+}
+.contact_right p{
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 7px;
+}
+.contact_right p a{
+	color: #fcc419;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+}
+.soc_links{
+	margin-top: 50px;
+}
+.soc_links a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	margin: 3px;
+	background: #fcc419;
+	color: #000;
+	transition: all .2s ease;
+}
+.soc_links a:hover{
+	background: #fff;
+}
+.instagram_block{
+	margin: 150px 0px;
+	margin-top: 0px;
+}
+.instagram_row{
+	display: flex;
+	justify-content: space-between;
+}
+.instagram_left{
+	display: flex;
+	width: 60%;
+	margin-right: 5%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.instagram_right{
+	width: 35%;
+	text-align: right;
+}
+.instagram_left > div{
+	width: 32%;
+	margin: .5%;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+}
+.instagram_left > div img{
+	width: 100%;
+	height: 100%;
+}
+.instagram_left .instagram_link{
+	background: rgba(0,0,0,.7);
+	text-align: center;
+	padding-top: 50%;
+	position: absolute;
+	transition: all .3s ease;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.instagram_left > div:hover > .instagram_link{
+	opacity: 1;
+	visibility: visible;
+}
+.instagram_link ul li{
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fac419;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.instagram_right h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Industry", sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	margin: 50px 0px;
+
+}
+.instagram_right h5{
+	color: #343432;
+	font-size: 17px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.instagram_right p{
+	color: #343432;
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 90px;
+}
+.instagram_right a{
+	color: #000;
+	font-family: "Industry", sans-serif;
+	background: #fac419;
+	padding: 10px 30px;
+	border-radius: 15px;
+	font-size: 22px;
+	text-decoration: none;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+footer{
+	background: #181818;
+	padding: 20px 0px;
+	margin-top: 25px;
+}
+.footer_row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer_text p{
+	color: #686868;
+	font-size: 16px;
+	font-weight: 400;
+}
+.footer_text p a{
+	color: #fac419;
+	text-decoration: none;
+}
+.footer_links a i{
+	display: inline-block;
+	color: #686868;
+	margin: 0px 5px;
+	transition: all .2s ease;
+	font-size: 25px;
+}
+.footer_links a i:hover{
+	color: #fff;
+
 }
 @media screen and (min-width: 1500px){
 	header nav ul li a{
