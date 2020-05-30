@@ -34,6 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 
 			.add({
+				targets: '.header_title h1',
+			    opacity: [0,1],
+				translateX: [-200,0],
+				delay: (el,i) => 100 * i,
+				offset: '-=900',
+			})
+			
+			.add({
+				targets: '.header_title p',
+				opacity: [0,1],
+				translateX: [-100,0],
+				delay: (el,i) => 100 * i,
+				offset: '-=900',
+			})
+
+			.add({
 
 			})
 			

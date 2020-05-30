@@ -938,6 +938,45 @@ footer{
 	color: #fff;
 
 }
+.clanek_top{
+	display: flex;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.clanek_title h2{
+	font-weight: bold;
+	color: #fac419;
+	font-size: 50px;
+
+}
+.clanek_info ul li{
+	list-style: none;
+	font-size: 15px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 0 10px;
+}
+.clanek_info ul li a{
+	color: #fac419;
+	font-weight: 400;
+	margin-left: 10px;
+	display: inline-block;
+	font-size: 15px;
+	text-decoration: none;
+}
+.clanek_main p{
+	font-size: 15px;
+	color: #fff;
+	font-weight: 300;
+	margin: 15px 0px;
+}
+.clanek_main img{
+	width: 100%;
+	height: auto;
+	margin: 15px 0px;
+}
 @media screen and (min-width: 1500px){
 	header nav ul li a{
 		font-size: 21px;
