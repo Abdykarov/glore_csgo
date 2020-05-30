@@ -607,7 +607,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	margin: .3%;
 	display: inline-block;
 	position: relative;
-	max-height: 330px;
+	overflow: hidden;
 	transition: all .2s ease;
 	border-bottom: 2px solid transparent;
 }
@@ -966,16 +966,87 @@ footer{
 	font-size: 15px;
 	text-decoration: none;
 }
-.clanek_main p{
+.clanek_left p{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 300;
 	margin: 15px 0px;
 }
-.clanek_main img{
+.clanek_left img{
 	width: 100%;
 	height: auto;
 	margin: 15px 0px;
+}
+.clanek_main{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.clanek_left{
+	width: 70%;
+	display: inline-block;
+}
+.clanek_right{
+	margin-left: 5%;
+	width: 25%;
+	display: inline-block;
+}
+.clanek_right h4{
+	color: #fac419;
+	font-size: 16px;
+	position: relative;
+}
+.clanek_right h4:after{
+	content: "";
+	position: absolute;
+	right: 0px;
+	width: 45%;
+	top: 50%;
+	height: 2px;
+	background: #fac419;
+	display: block;
+}
+.clanek_right img{
+	width: 100%;
+}
+.articles_row.column > div{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.article_share{
+	width: 100%;
+	margin-top: 25px;
+	border-top: 1px solid #222;
+	padding: 25px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.article_stat{
+	font-size: 15px;
+	color: #fac419;
+}
+.article_stat i{
+	margin-right: 15px;
+}
+.article_links{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.article_links p{
+	color: #fff;
+	font-size: 15px;
+}
+.article_links ul li{
+	display: inline-block;
+	list-style: none;
+}
+.article_links ul li a{
+	display: inline-block;
+	margin-left: 15px;
+	color: #fac419;
+	font-size: 20px;
+
 }
 @media screen and (min-width: 1500px){
 	header nav ul li a{
