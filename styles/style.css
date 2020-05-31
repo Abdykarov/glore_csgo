@@ -268,7 +268,12 @@ header nav ul li a:hover, header nav ul li a.active{
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 10px;
+	transform: all .3s;
 	border: 2px solid #fcc419;
+}
+.read_btn:hover{
+	background: #fcc419;
+	color: #000;
 }
 .read_btn:after{
 	position: absolute;
@@ -277,9 +282,13 @@ header nav ul li a:hover, header nav ul li a.active{
 	top: 49%;
 	width: 20px;
 	height: 3px;
+	transition: all .3s ease;
 	background: #fcc419;
 	display: block;
 
+}
+.read_btn:hover:after{
+	background: #000;
 }
 
 .matches_nav{
@@ -346,7 +355,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	text-align: center;
 	align-items: center;
 	overflow: hidden;
-	z-index: 100;
+	z-index: 1;
 	opacity: 0.6;
 	padding: 0px 30px;
 	transition: all.4s;
@@ -383,7 +392,8 @@ header nav ul li a:hover, header nav ul li a.active{
 	opacity: 1;
 	background-position: center -30px;
 	cursor: pointer;
-	margin: -15px;
+	z-index: 5;
+	transform: scale(1.1);
 }
 .match_item:hover:after{
 	width: 90%;
@@ -414,7 +424,8 @@ header nav ul li a:hover, header nav ul li a.active{
 
 .sponsores{
 	width: 100%;
-	margin: 50px 0px;
+	margin: 100px 0px;
+	margin-bottom: 150px;
 }
 
 .sponsores_block .slick-slide{
@@ -898,19 +909,19 @@ header nav ul li a:hover, header nav ul li a.active{
 }
 .instagram_right a{
 	color: #000;
-	font-family: "Industry", sans-serif;
 	background: #fac419;
 	padding: 10px 30px;
 	border-radius: 15px;
 	font-size: 22px;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 footer{
 	background: #181818;
+	clear: both;
 	padding: 20px 0px;
-	margin-top: 25px;
+	margin-top: 50px;
 }
 .footer_row{
 	display: flex;
@@ -919,7 +930,7 @@ footer{
 }
 .footer_text p{
 	color: #686868;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 }
 .footer_text p a{
@@ -1060,8 +1071,8 @@ footer{
 	margin-bottom: 50px;
 }
 .match_left{
-	width: 65%;
-	margin-right: 5%;
+	width: 67%;
+	margin-right: 3%;
 	display: inline-block;
 }
 .match_right{
@@ -1076,11 +1087,11 @@ footer{
 	justify-content: space-between;
 	box-sizing: border-box;
 	flex-wrap: wrap;
-	padding: 30px 60px;
+	padding: 50px 60px;
 	background: #111111 url(../img/match_bg2.png) center center no-repeat;
 	background-size: cover;
-	border-radius: 15px;
-	margin-top: 25px;
+	border-radius: 10px;
+	margin-top: 15px;
 }
 .match_block div img{
 	height: auto;
@@ -1104,17 +1115,64 @@ footer{
 	height: 10px;
 	display: inline-block;
 	margin-left: 50px;
+
 	margin-right: 50px;
 	background: #fff;
 	margin-bottom: 25px;
+}
+
+.map_block.inferno{
+	background: url(../img/inferno.png) center 0 no-repeat;
+		background-size: cover;
+
+}
+.map_block.cache{
+	background: url(../img/cache.png) center -50px no-repeat;
+		background-size: cover;
+
+}
+.map_block.dust2{
+	background: url(../img/dust.png) center 0 no-repeat;
+	background-size: cover;
+}
+.map_block.overpass{
+	background: url(../img/overpass.png) center 0 no-repeat;
+		background-size: cover;
+
+}
+.map_block.train{
+	background: url(../img/train.png) center -50px no-repeat;
+		background-size: cover;
+
+}
+.map_block.nuke{
+	background: url(../img/nuke.png) center -50px no-repeat;
+		background-size: cover;
+
+}
+.map_block.cobblestone{
+	background: url(../img/cobblestone.png) center -50px no-repeat;
+		background-size: cover;
+
+}
+.map_block.mirage{
+	background: url(../img/mirage.png) center -50px no-repeat;
+		background-size: cover;
+
+}
+.map_block.vertigo{
+	background: url(../img/vertigo.png) center -50px no-repeat;
+		background-size: cover;
+
 }
 .map_block{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	max-height: 150px;
-	border-radius: 15px;
-	margin-top: 25px;
+	height: 100px;
+	border-radius: 10px;
+	margin-top: 15px;
+	background-size: cover;
 }
 .map_block img{
 	width: 100%;
@@ -1126,42 +1184,145 @@ footer{
 	top: 0;
 	box-sizing: border-box;
 	width: 100%;
+	z-index: 1;
+	background: rgba(0,0,0,.55);
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 30px;
+	padding: 0px 35px;
 }
 .map_info h4{
 	color: #fac419;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 25px;
 	text-transform: uppercase;
 }
 .map_info p{
-	font-size: 25px;
-
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 .highlights_row{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .highlight_item{
 	width: 24%;
 	margin: 1px;
 	padding: 7px 15px;
+	cursor: pointer;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
 	border-radius: 15px;
+	transition: all .3s;
 	border: 1px solid #fac419;
 }
+.highlight_item:hover{
+	background: #ccc419;
+	color: #000;
+}
+.highlight_item:hover p{
+	color: #000;
+}
+
 .highlight_item p{
 	color: #fac419;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+.card_row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card_left{
+	width: 45%;
+	display: inline-block;
+	overflow: hidden;
+}
+.card_left img{
+	width: 100%;
+}
+.card_right{
+	margin-top: 100px;
+	width: 45%;
+	margin-left: 10%;
+	display: inline-block;
+}
+.card_right div{
+	margin-top: 35px;
+}
+.card_right > div:last-child{
+	margin-top: 75px;
+}
+.card_right h5{
+	color: #fac419;
+	font-size: 20px;
+	font-weight: bold;
+}
+.card_right h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 75px;
+	color: #fff;
+}
+.card_right p{
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+}
+.galerie{
+	width: 100%;
+	overflow: hidden;
+}
+.galerie h2{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+.galerie h2{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.galerie_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.galerie_row > div{
+	width: 31%;
+	overflow: hidden;
+	display: inline-block;
+	max-height: 450px;
+	margin: 1%;
+}
+.galerie_row > div img{
+	width: 100%;
+	height: 100%;
+}
+.galerie .read_btn{
+	float: right;
+	display: inline-block;
+	margin-top: 25px;
+	clear: both;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 25px;
+	border-width: 1px;
+}
+.galerie .read_btn:after{
+	display: none;
 }
 @media screen and (min-width: 1500px){
 	header nav ul li a{
@@ -1169,6 +1330,48 @@ footer{
 	}
 }
 @media screen and (min-width: 1600px){
+	.card_right h5{
+		font-size: 25px;
+	}
+	.card_right p{
+		font-size: 23px;
+	}
+	.articles_row > div .article_info{
+		padding: 15px 25px;
+	}
+	.articles_row > div .article_info a{
+		font-size: 16px;
+		padding: 15px 25px;
+		width: 45%;
+
+	}
+	.article_stat{
+		font-size: 18px;
+	}
+	.clanek_right h4{
+		font-size: 22px;
+	}
+	.clanek_left p{
+		font-size: 18px;
+	}
+	.clanek_title h2{
+		font-size: 55px;
+	}
+	.clanek_info ul li{
+		font-size: 20px;
+	}
+	.clanek_info ul li a{
+		font-size: 20px;
+	}
+	.article_info p{
+		font-size: 16px;
+	}
+	.merch p{
+		font-size: 17px;
+	}
+	.sponsores{
+		margin: 150px 0px 200px 0px;
+	}
 	header nav ul li a{
 		font-size: 23px;
 		font-weight: 300;
@@ -1207,6 +1410,64 @@ footer{
 		background: #fac219;
 		margin-bottom: 15px;
 		transition: all .3s;
+	}
+	.roster_left .horizontal p{
+		font-size: 110px;
+	}.roster_left .vertical p{
+		line-height: 110px;
+		padding-bottom: 110px;
+		font-size: 110px;
+	}.roster_left .vertical p span{
+		font-size: 110px;
+	}
+	.roster_info h2{
+		font-size: 25px;
+	}
+	.roster_info span{
+		font-size:17px;
+		font-weight: 400;
+	}
+	.contact_block input, .contact_block textarea{
+		font-size: 22px;
+	}
+	.contact_block button{
+		font-size: 23px;
+		padding: 15px 55px;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+	.contact_right h4{
+		font-size: 50px;
+	}
+	.contact_right p{
+		font-size: 20px;
+	}
+	footer{
+		padding: 30px 0px;
+	}
+	footer .footer_text p{
+		font-size: 19px;
+	}
+	.instagram_right h5{
+		font-size: 25px;
+	}
+	.instagram_right p{
+		font-size: 20px;
+	}
+	.caption{
+		font-size: 25px;
+	}
+	.match_block div img{
+		max-height: 180px;
+	}
+	.match_block ul li{
+		font-size: 140px;
+	}
+	.match_block ul li span{
+		margin-bottom: 40px;
+	}
+	.map_block{
+		height: 130px;
 	}
 }
 
