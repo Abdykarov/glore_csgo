@@ -1223,7 +1223,7 @@ footer{
 	border: 1px solid #fac419;
 }
 .highlight_item:hover{
-	background: #ccc419;
+	background: #fac419;
 	color: #000;
 }
 .highlight_item:hover p{
