@@ -346,7 +346,6 @@ header nav ul li a:hover, header nav ul li a.active{
 	text-align: center;
 	align-items: center;
 	overflow: hidden;
-
 	z-index: 100;
 	opacity: 0.6;
 	padding: 0px 30px;
@@ -1046,7 +1045,123 @@ footer{
 	margin-left: 15px;
 	color: #fac419;
 	font-size: 20px;
+}
+.caption{
+	font-weight: 300;
+	color: #999;
+	margin-bottom: 25px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+.match_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.match_left{
+	width: 65%;
+	margin-right: 5%;
+	display: inline-block;
+}
+.match_right{
+	width: 30%;
+	display: inline-block;
+}
+.match_block{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding: 30px 60px;
+	background: #111111 url(../img/match_bg2.png) center center no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	margin-top: 25px;
+}
+.match_block div img{
+	height: auto;
+	max-height: 165px;
+}
+.match_block p{
+	color: #999999;
+	margin-top: 25px;
+}
+.match_block ul li{
+	font-family: "Industry", sans-serif;
+	font-size: 100px;
+	display: inline-block;
+	transition: all .3s;
+	font-weight: bold;
+	position: relative;
+	color: #fac219;
+}
+.match_block ul li span{
+	width: 50px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	background: #fff;
+	margin-bottom: 25px;
+}
+.map_block{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	max-height: 150px;
+	border-radius: 15px;
+	margin-top: 25px;
+}
+.map_block img{
+	width: 100%;
+	height: 100%;
+}
+.map_info{
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 30px;
+}
+.map_info h4{
+	color: #fac419;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.map_info p{
+	font-size: 25px;
 
+}
+.highlights_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.highlight_item{
+	width: 24%;
+	margin: 1px;
+	padding: 7px 15px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 15px;
+	border: 1px solid #fac419;
+}
+.highlight_item p{
+	color: #fac419;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 @media screen and (min-width: 1500px){
 	header nav ul li a{
