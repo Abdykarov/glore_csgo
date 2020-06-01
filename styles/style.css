@@ -340,10 +340,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	opacity: .8;
 }
 .matches_row{
-	display: flex;
 	margin-top: 35px;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .matches_row .match_item{
 	width: 33.15%;
@@ -362,6 +359,46 @@ header nav ul li a:hover, header nav ul li a.active{
 	position: relative;
 	box-sizing: border-box;
 }
+ .matches_row .slick-slide {
+    margin: 0 3px;
+  }
+  /* the parent */
+ .matches_row .slick-list {
+    margin: 0 -3px;
+  }
+
+.matches_row .slick-list.draggable{
+	padding: 15px 25px;
+	padding-right: 10px;
+}
+.slick-dots{
+	text-align: center;
+	margin-top: 25px;
+}
+.slick-dots li{
+	list-style: none;
+	display: inline-block;
+}
+.slick-dots li button{
+	background: transparent;
+	color: #fac419;
+	font-size: 0;
+	border: none;
+	border: 1px solid #fac419;
+	border-radius: 50%;
+	width: 15px;
+	display: inline-block;
+	margin: 0 5px;
+	cursor: pointer;
+	height: 15px;
+	outline: none;
+	transition: all .2s ease;
+}
+.slick-dots li button:hover, .slick-dots li.slick-active button{
+	background: #fac419;
+	color: #000;
+}
+
 .match_item img{
 	height: 80px;
 	margin-top: 25px;
@@ -392,7 +429,7 @@ header nav ul li a:hover, header nav ul li a.active{
 	opacity: 1;
 	background-position: center -30px;
 	cursor: pointer;
-	z-index: 5;
+	z-index: 9999;
 	transform: scale(1.1);
 }
 .match_item:hover:after{
@@ -774,9 +811,16 @@ header nav ul li a:hover, header nav ul li a.active{
 	font-size: 18px;
 	float: right;
 	outline: none;
+	transition: all .2s ease;
 	border: none;
 	cursor: pointer;
-
+	border: 1px solid transparent;
+}
+.contact_left button:hover{
+	border-radius: 10px;
+	color: #fac419;
+	background: transparent;
+	border-color: #fac419;
 }
 .contact_right{
 	text-align: right;
@@ -908,14 +952,20 @@ header nav ul li a:hover, header nav ul li a.active{
 	margin-bottom: 90px;
 }
 .instagram_right a{
-	color: #000;
-	background: #fac419;
-	padding: 10px 30px;
-	border-radius: 15px;
+	color: #fac419;
+	background: transparent;
+	padding: 10px 50px;
+	border: 1px solid #fac419;
+	border-radius: 10px;
 	font-size: 22px;
 	text-decoration: none;
+	transition: all .2s ease;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+.instagram_right a:hover{
+	background: #fac419;
+	color: #000;
 }
 footer{
 	background: #181818;
@@ -1216,6 +1266,7 @@ footer{
 	padding: 7px 15px;
 	cursor: pointer;
 	box-sizing: border-box;
+	text-align: right;
 	display: flex;
 	justify-content: space-between;
 	border-radius: 15px;
@@ -1234,6 +1285,8 @@ footer{
 	color: #fac419;
 	text-transform: uppercase;
 	font-weight: bold;
+	text-align: right;
+	width: 100%;
 }
 .card_row{
 	width: 100%;
@@ -1253,7 +1306,7 @@ footer{
 	margin-top: 100px;
 	width: 45%;
 	margin-left: 10%;
-	display: inline-block;
+	display: inne-block;
 }
 .card_right div{
 	margin-top: 35px;
